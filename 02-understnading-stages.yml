@@ -9,28 +9,23 @@ stages:
   jobs:
   - job: FirstJob
     steps:
-    - bash: echo, Firstjob Build.
+    - bash: echo "Firstjob Build."
   - job: SecondJob
     steps:
-    - bash: echo, SecondJob Build.
+    - bash: echo "SecondJob Build."
 
 - stage: DevDeploy
   jobs:
-  - job: DevDeploy job
+  - job: DevDeployJob
     steps:
-    - bash: echo, DevDeploy.
+    - bash: echo "DevDeploy."
 - stage: QADeploy
   jobs:
-  - job: QADeploy job
+  - job: QADeployJob
     steps:
-    - bash: echo, QADeploy.
+    - bash: echo "QADeploy."
 - stage: ProdDeploy
   jobs:
-  - job: ProdDeploy job
+  - job: ProdDeployJob
     steps:
     - bash: echo, ProdDeploy done.
-
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
