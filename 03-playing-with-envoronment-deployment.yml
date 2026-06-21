@@ -29,7 +29,7 @@ stages:
       runOnce:
         deploy:
           steps:
-          - script: echo "Deploy to $(environment)"
+          - script: echo "Deployed to $(environment)"
 # strategy:
 #   matrix:
 #     linux:
