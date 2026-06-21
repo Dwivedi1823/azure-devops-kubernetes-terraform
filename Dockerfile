@@ -2,7 +2,7 @@ FROM maven:3.8.2-jdk-8-slim AS build
 WORKDIR /home/app
 COPY . /home/app
 RUN mvn -f /home/app/pom.xml clean package
-
+#Java version updated
 FROM eclipse-temurin:8-jre
 VOLUME /tmp
 EXPOSE 8000
